@@ -4,7 +4,7 @@ body, html {
   padding: 0;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-  background: #f5f7fa; /* solid background */
+  background: #f5f7fa;
   color: #1a1a1a;
 }
 
@@ -28,9 +28,7 @@ nav a {
   font-weight: 600;
 }
 
-nav a:hover {
-  color: #007BFF;
-}
+nav a:hover { color: #007BFF; }
 
 /* Hero Section */
 .hero {
@@ -45,15 +43,8 @@ nav a:hover {
   padding: 0 2rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-}
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; max-width: 600px; }
 
 /* Sections */
 section {
@@ -63,45 +54,6 @@ section {
   align-items: center;
   padding: 6rem 2rem;
   text-align: center;
-}
-
-section img {
-  max-width: 400px;
-  margin-bottom: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-section p {
-  max-width: 600px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #1a1a1a;
-  color: #ffffff;
-}
-
-/* Smooth scroll anchor offset for sticky nav */
-section::before {
-  content: "";
-  display: block;
-  height: 80px; /* height of nav */
-  margin-top: -80px; /* negative offset */
-  visibility: hidden;
-}
-
-/* Fade-in animations */
-section {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.8s ease-out;
@@ -112,13 +64,35 @@ section.visible {
   transform: translateY(0);
 }
 
+section img {
+  max-width: 400px;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section h2 { font-size: 2rem; margin-bottom: 1rem; }
+section p { max-width: 600px; font-size: 1rem; line-height: 1.6; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Smooth scroll anchor offset */
+section::before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  section img {
-    max-width: 90%;
-  }
+  .hero h1 { font-size: 2.2rem; }
+  section img { max-width: 90%; }
 }
