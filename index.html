@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
+
+  <header>
+    <div class="container header-container">
       <div class="brand">
         <img src="assets/logo.png" alt="BlueShield CPR logo" class="logo-img" />
         <div class="title">
@@ -17,193 +18,132 @@
           <p>ACLS • BLS • PALS — AHA-aligned training</p>
         </div>
       </div>
-
       <nav>
-        <a class="btn btn-ghost" href="#courses">Courses</a>
-        <a class="btn btn-ghost" href="#schedule">Schedule</a>
-        <a class="btn btn-ghost" href="#contact">Contact</a>
-        <a class="btn btn-primary" href="#register">Register</a>
+        <a href="#courses" class="btn btn-ghost">Courses</a>
+        <a href="#schedule" class="btn btn-ghost">Schedule</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+        <a href="#register" class="btn btn-primary">Register</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero" aria-label="Hero">
-        <div class="hero-left">
-          <h2>Expert, AHA-aligned CPR courses for healthcare professionals</h2>
-          <p>Hands-on, practical training in ACLS, BLS, and PALS taught by AHA-certified instructors. Options for in-person, blended learning, and onsite group training for hospitals and clinics.</p>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#register">Find a Class</a>
-            <a class="btn btn-ghost" href="#schedule">View Schedule</a>
-            <div class="pill">AHA Provider Cards Issued</div>
-          </div>
-
-          <div class="stats" aria-hidden="true">
-            <div class="stat"><strong>12+</strong> years teaching</div>
-            <div class="stat"><strong>10k+</strong> certifications issued</div>
-            <div class="stat"><strong>4.9</strong>/5 avg. rating</div>
-          </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Expert, AHA-aligned CPR courses for healthcare professionals</h2>
+        <p>Hands-on, practical training in ACLS, BLS, and PALS taught by AHA-certified instructors. In-person, blended learning, and onsite group training available.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#register">Find a Class</a>
+          <a class="btn btn-ghost" href="#schedule">View Schedule</a>
         </div>
+        <div class="stats">
+          <div class="stat"><strong>12+</strong> years teaching</div>
+          <div class="stat"><strong>10k+</strong> certifications issued</div>
+          <div class="stat"><strong>4.9</strong>/5 avg. rating</div>
+        </div>
+      </div>
+    </section>
 
-        <aside class="hero-right" aria-label="Courses summary">
-          <div class="hero-right-header">
-            <div class="hero-right-title">Core Courses</div>
-            <div class="hero-right-sub">In-person & Blended</div>
-          </div>
-
-          <div class="course">
-            <div class="kicker">ACLS</div>
-            <div>
-              <h4>Advanced Cardiovascular Life Support</h4>
-              <p>For healthcare providers managing adult cardiac emergencies — AHA curriculum and live skills testing.</p>
-            </div>
-          </div>
-
-          <div class="course">
-            <div class="kicker">BLS</div>
-            <div>
-              <h4>Basic Life Support</h4>
-              <p>CPR and AED use — required for clinical staff, first responders, and students.</p>
-            </div>
-          </div>
-
-          <div class="course">
-            <div class="kicker">PALS</div>
-            <div>
-              <h4>Pediatric Advanced Life Support</h4>
-              <p>Pediatric-focused algorithms and team dynamics for critically ill infants and children.</p>
-            </div>
-          </div>
-
-          <div class="hero-right-actions">
-            <a class="btn btn-primary" href="#register">Register Now</a>
-            <a class="btn btn-ghost" href="#contact">Request Group</a>
-          </div>
-        </aside>
-      </section>
-
-      <hr class="section-sep" />
-
-      <section id="courses">
-        <div class="cards" aria-label="Course highlights">
-          <div class="card">
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+      <div class="container">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+          <div class="course-card">
             <h3>ACLS — 2-day course</h3>
             <p>Includes e-learning + instructor-led skills session. Algorithm practice, ECG rhythm recognition, megacode simulation.</p>
           </div>
-
-          <div class="card">
+          <div class="course-card">
             <h3>BLS — 3-hour session</h3>
             <p>Hands-on CPR, rescue breaths, choking relief, and AED training — certification card issued same day.</p>
           </div>
-
-          <div class="card">
+          <div class="course-card">
             <h3>PALS — 1.5–2 day</h3>
             <p>Pediatric assessments, dosing, team-based scenarios, and pediatric resuscitation algorithms.</p>
           </div>
-
-          <div class="card">
+          <div class="course-card">
             <h3>Onsite Group Training</h3>
             <p>We bring equipment and AHA-certified instructors to your facility. Flexible scheduling and group discounts.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <hr class="section-sep" />
-
-      <section class="why" id="schedule">
-        <div>
-          <h3 class="section-title">Why choose BlueShield CPR?</h3>
-          <p class="muted">Practical, AHA-aligned instruction focused on skill competence, teamwork, and clinical relevance.</p>
-
-          <div class="faq">
-            <div class="faq-item">
-              <strong>Experienced instructors:</strong>
-              <div class="muted">AHA-certified instructors with clinical backgrounds in emergency medicine and critical care.</div>
-            </div>
-
-            <div class="faq-item">
-              <strong>Flexible learning:</strong>
-              <div class="muted">Blended e-learning + skills check, or full in-person classes to fit staffing needs.</div>
-            </div>
-
-            <div class="faq-item">
-              <strong>Equipment & manikins:</strong>
-              <div class="muted">We use high-fidelity manikins and realistic scenarios to build confidence and muscle memory.</div>
-            </div>
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+      <div class="container">
+        <h2>Why choose BlueShield CPR?</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <h4>Experienced instructors</h4>
+            <p>AHA-certified instructors with clinical backgrounds in emergency medicine and critical care.</p>
+          </div>
+          <div class="why-card">
+            <h4>Flexible learning</h4>
+            <p>Blended e-learning + skills check, or full in-person classes to fit staffing needs.</p>
+          </div>
+          <div class="why-card">
+            <h4>Equipment & manikins</h4>
+            <p>We use high-fidelity manikins and realistic scenarios to build confidence and muscle memory.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <aside>
-          <div class="card upcoming">
-            <h3>Upcoming schedule</h3>
-            <p class="muted">Next available classes — seats limited.</p>
-            <ul>
-              <li><strong>ACLS:</strong> Sep 27–28, 2025 — Downtown Training Center</li>
-              <li><strong>BLS:</strong> Weekly — Mon/Wed/Fri (3-hour sessions)</li>
-              <li><strong>PALS:</strong> Oct 10–11, 2025 — Pediatric Skills Lab</li>
-            </ul>
-            <div style="margin-top:10px;">
-              <a class="btn btn-primary" href="#register">Reserve Seat</a>
-            </div>
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+      <div class="container">
+        <h2>Upcoming Schedule</h2>
+        <ul class="schedule-list">
+          <li><strong>ACLS:</strong> Sep 27–28, 2025 — Downtown Training Center</li>
+          <li><strong>BLS:</strong> Weekly — Mon/Wed/Fri (3-hour sessions)</li>
+          <li><strong>PALS:</strong> Oct 10–11, 2025 — Pediatric Skills Lab</li>
+        </ul>
+        <a class="btn btn-primary" href="#register">Reserve Seat</a>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+      <div class="container">
+        <h2>Register for a Course</h2>
+        <form action="https://example.com/register" method="post" class="form">
+          <input name="name" placeholder="Full name" required />
+          <input name="email" type="email" placeholder="Email address" required />
+          <select name="course" required>
+            <option value="">Select course</option>
+            <option>ACLS — Sep 27–28</option>
+            <option>BLS — Sep 22 (3-hr)</option>
+            <option>PALS — Oct 10–11</option>
+          </select>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Submit Registration</button>
+            <a class="btn btn-ghost" href="#contact">Contact Us</a>
           </div>
+        </form>
+      </div>
+    </section>
 
-          <div class="card">
-            <h3>Pricing & discounts</h3>
-            <p class="muted">Competitive pricing, with group discounts for 6+ participants and institutional billing available.</p>
-          </div>
-        </aside>
-      </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: training@example.com | Phone: +1 (555) 555-5555</p>
+        <a class="btn btn-primary" href="mailto:training@example.com">Email Us</a>
+      </div>
+    </section>
 
-      <hr class="section-sep" />
+  </main>
 
-      <section id="register">
-        <div class="register-grid">
-          <div class="card">
-            <h3 class="section-title">Register for a course</h3>
-            <p class="muted">Choose a course, select a date, and pay online. You’ll receive AHA e-learning instructions and in-person skills details after registration.</p>
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> BlueShield CPR — All rights reserved</p>
+    </div>
+  </footer>
 
-            <form action="https://example.com/register" method="post" class="form">
-              <input name="name" placeholder="Full name" required />
-              <input name="email" type="email" placeholder="Email address" required />
-              <select name="course" required>
-                <option value="">Select course</option>
-                <option>ACLS — Sep 27–28</option>
-                <option>BLS — Sep 22 (3-hr)</option>
-                <option>PALS — Oct 10–11</option>
-              </select>
-              <div class="form-actions">
-                <button class="btn btn-primary" type="submit">Submit Registration</button>
-                <a class="btn btn-ghost" href="#contact">Contact Us</a>
-              </div>
-            </form>
-          </div>
-
-          <aside class="card" id="contact">
-            <h3 class="section-title">Contact</h3>
-            <p class="muted">Questions about curriculum, group training, or scheduling?</p>
-            <div class="contact-line"><span class="contact-label">Email:</span><span class="contact-val">training@example.com</span></div>
-            <div class="contact-line"><span class="contact-label">Phone:</span><span class="contact-val">+1 (555) 555-5555</span></div>
-
-            <div style="margin-top:12px;">
-              <a class="btn btn-primary" href="mailto:training@example.com">Email Us</a>
-              <a class="btn btn-ghost" href="#register" style="margin-left:8px">Register</a>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <hr class="section-sep" />
-
-      <footer class="footer" role="contentinfo">
-        <div>
-          <strong class="brand-name">BlueShield CPR</strong>
-          <div class="muted">AHA-aligned CPR & advanced life support training</div>
-        </div>
-        <div class="muted">© <span id="year"></span> BlueShield CPR — All rights reserved</div>
-      </footer>
-    </main>
-  </div>
-
-  <script src="js/site.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
