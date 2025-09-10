@@ -1,4 +1,6 @@
-/* Reset + Base */
+/* ================================
+   Reset & Base
+   ================================ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,52 +8,109 @@
 }
 
 body {
-  margin: 0;
   font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: #102c4d;
-  background: #ffffff;
+  background: #f7f9fb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Layout */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 section {
   padding: 80px 20px;
 }
 
+/* ================================
+   Container
+   ================================ */
 .container {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* Header */
+/* ================================
+   Header / Navbar
+   ================================ */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(6px);
-  padding: 16px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 14px rgba(16, 44, 77, 0.08);
+  z-index: 1000;
 }
 
-header nav a {
-  margin-left: 24px;
-  text-decoration: none;
-  color: #102c4d;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+}
+
+.title h1 {
+  font-size: 20px;
+  color: #0b63b5;
+  font-weight: 700;
+}
+
+.title p {
+  font-size: 13px;
+  color: #8a8f93;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+nav a {
   font-weight: 500;
-  transition: color 0.2s;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: background 0.2s, color 0.2s;
 }
 
-header nav a:hover {
+.btn-primary {
+  background: #0b63b5;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #3282b8;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(11, 99, 181, 0.2);
   color: #0b63b5;
 }
 
-/* Hero */
+.btn-ghost:hover {
+  background: rgba(11, 99, 181, 0.05);
+}
+
+/* ================================
+   Hero Section
+   ================================ */
 .hero {
   background: linear-gradient(135deg, #0b63b5 0%, #3282b8 100%);
   color: white;
@@ -60,33 +119,52 @@ header nav a:hover {
   border-radius: 0 0 40px 40px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
+.hero h2 {
+  font-size: 2.8rem;
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 32px;
+  max-width: 700px;
+  margin: 0 auto 32px auto;
 }
 
-.hero .cta-btn {
-  background: #ffffff;
-  color: #0b63b5;
-  padding: 14px 28px;
-  border-radius: 12px;
+.hero .cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Stats / Pill */
+.pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
   font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  font-size: 13px;
 }
 
-.hero .cta-btn:hover {
-  background: #e6f0fa;
-  color: #083d73;
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-/* Courses */
+.stat {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+/* ================================
+   Courses Section
+   ================================ */
 .courses {
   background: #ffffff;
   text-align: center;
@@ -107,17 +185,19 @@ header nav a:hover {
   background: #ffffff;
   padding: 28px;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(16,44,77,0.08);
-  border: 1px solid rgba(11,99,181,0.05);
+  box-shadow: 0 6px 20px rgba(16, 44, 77, 0.08);
+  border: 1px solid rgba(11, 99, 181, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .course-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(16,44,77,0.12);
+  box-shadow: 0 10px 24px rgba(16, 44, 77, 0.12);
 }
 
-/* Why Us */
+/* ================================
+   Why Us Section
+   ================================ */
 .why-us {
   background: linear-gradient(to bottom, #f4f9ff 0%, #ffffff 100%);
   text-align: center;
@@ -138,16 +218,18 @@ header nav a:hover {
   background: #ffffff;
   padding: 24px;
   border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(16,44,77,0.06);
+  box-shadow: 0 4px 16px rgba(16, 44, 77, 0.06);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .why-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(16,44,77,0.1);
+  box-shadow: 0 8px 18px rgba(16, 44, 77, 0.1);
 }
 
-/* Register */
+/* ================================
+   Register Section
+   ================================ */
 .register {
   background: linear-gradient(135deg, #3282b8 0%, #0b63b5 100%);
   color: white;
@@ -175,7 +257,9 @@ header nav a:hover {
   color: #083d73;
 }
 
-/* Footer */
+/* ================================
+   Footer
+   ================================ */
 footer {
   background: #102c4d;
   color: white;
@@ -184,7 +268,9 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Utility */
+/* ================================
+   Utilities
+   ================================ */
 h2 {
   font-weight: 700;
 }
@@ -194,9 +280,29 @@ p {
   margin: 0 auto 20px;
 }
 
-header img {
-  height: 48px;
-  width: auto;
-  max-width: 180px;
+.section-sep {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(140,140,140,0.3), transparent);
+  margin: 60px 0;
+  border-radius: 6px;
 }
 
+/* Responsive */
+@media (max-width: 980px) {
+  .hero {
+    padding: 80px 20px;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .container {
+    padding: 16px;
+  }
+}
